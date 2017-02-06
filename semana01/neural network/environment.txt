@@ -1,0 +1,7 @@
+Environment
+In the upcoming video, Siraj will cover building a Neural Network from scratch using just the Python library numpy. If you'd like to follow along, here is the environment configuration:
+
+Python 2
+>> conda create -n siraj-nn python=2
+Numpy
+>> conda install numpy

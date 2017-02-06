@@ -1,0 +1,7 @@
+Environment
+In the upcoming video, Siraj will be implementing linear regression in Python. If you'd like to follow along, set up a conda environment with the following:
+
+Python 2
+>> conda create -n siraj-regression python=2
+pandas, matplotlib, scikit-learn
+>> conda install pandas matplotlib scikit-learn
