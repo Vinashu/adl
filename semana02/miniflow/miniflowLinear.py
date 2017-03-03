@@ -68,6 +68,14 @@ class Linear(Node):
         for n in range(3):
             self.value += (self.inputs[n] * self.weights[n]) 
         self.value += self.bias
+        """
+        inputs = self.inbound_nodes[0].value
+        weights = self.inbound_nodes[1].value
+        bias = self.inbound_nodes[2]
+        self.value = bias.value
+        for x, w in zip(inputs, weights):
+            self.value += x * w
+        """
 
 
 def topological_sort(feed_dict):
