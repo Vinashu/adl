@@ -122,6 +122,8 @@ class MSE(Node):
         m = self.inbound_nodes[0].value.shape[0]
 
         diff = y - a
+        #diff**2  ==  np.square(diff)
+        #np.mean(diff) == (1 /m) * np.sum(diff**2)
         self.value = np.mean(diff**2)
 
 
